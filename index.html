@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram Clone</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-content">
+            <h1 class="logo">📸 Instagram</h1>
+            <div class="header-icons">
+                <span>🏠</span>
+                <span>💬</span>
+                <span>➕</span>
+                <span>❤️</span>
+                <span>👤</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Stories -->
+    <div class="stories">
+        <div class="story">
+            <div class="story-avatar">
+                <img src="https://i.pravatar.cc/150?img=1" alt="User">
+            </div>
+            <span>Your Story</span>
+        </div>
+        <div class="story">
+            <div class="story-avatar active">
+                <img src="https://i.pravatar.cc/150?img=2" alt="User">
+            </div>
+            <span>john_doe</span>
+        </div>
+        <div class="story">
+            <div class="story-avatar active">
+                <img src="https://i.pravatar.cc/150?img=3" alt="User">
+            </div>
+            <span>jane_smith</span>
+        </div>
+        <div class="story">
+            <div class="story-avatar active">
+                <img src="https://i.pravatar.cc/150?img=4" alt="User">
+            </div>
+            <span>mike_wilson</span>
+        </div>
+        <div class="story">
+            <div class="story-avatar active">
+                <img src="https://i.pravatar.cc/150?img=5" alt="User">
+            </div>
+            <span>sarah_jones</span>
+        </div>
+    </div>
+
+    <!-- Posts -->
+    <div class="posts">
+        <!-- Post 1 -->
+        <div class="post">
+            <div class="post-header">
+                <div class="post-user">
+                    <img src="https://i.pravatar.cc/150?img=12" alt="User">
+                    <span>ashish_dev</span>
+                </div>
+                <span class="more">⋮</span>
+            </div>
+            <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=500" alt="Post" class="post-image">
+            <div class="post-actions">
+                <div class="actions-left">
+                    <span class="like-btn" onclick="toggleLike(this)">🤍</span>
+                    <span>💬</span>
+                    <span>📤</span>
+                </div>
+                <span class="save-btn" onclick="toggleSave(this)">🔖</span>
+            </div>
+            <div class="post-likes">1,245 likes</div>
+            <div class="post-caption">
+                <strong>ashish_dev</strong> Beautiful mountain view! 🏔️ #nature #travel
+            </div>
+            <div class="post-comments">View all 12 comments</div>
+            <div class="post-time">2 HOURS AGO</div>
+            <div class="add-comment">
+                <input type="text" placeholder="Add a comment...">
+                <button>Post</button>
+            </div>
+        </div>
+
+        <!-- Post 2 -->
+        <div class="post">
+            <div class="post-header">
+                <div class="post-user">
+                    <img src="https://i.pravatar.cc/150?img=8" alt="User">
+                    <span>foodie_paradise</span>
+                </div>
+                <span class="more">⋮</span>
+            </div>
+            <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=500" alt="Post" class="post-image">
+            <div class="post-actions">
+                <div class="actions-left">
+                    <span class="like-btn" onclick="toggleLike(this)">🤍</span>
+                    <span>💬</span>
+                    <span>📤</span>
+                </div>
+                <span class="save-btn" onclick="toggleSave(this)">🔖</span>
+            </div>
+            <div class="post-likes">2,891 likes</div>
+            <div class="post-caption">
+                <strong>foodie_paradise</strong> Homemade pizza night! 🍕 Recipe in bio
+            </div>
+            <div class="post-comments">View all 45 comments</div>
+            <div class="post-time">5 HOURS AGO</div>
+            <div class="add-comment">
+                <input type="text" placeholder="Add a comment...">
+                <button>Post</button>
+            </div>
+        </div>
+
+        <!-- Post 3 -->
+        <div class="post">
+            <div class="post-header">
+                <div class="post-user">
+                    <img src="https://i.pravatar.cc/150?img=5" alt="User">
+                    <span>fitness_freak</span>
+                </div>
+                <span class="more">⋮</span>
+            </div>
+            <img src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=500" alt="Post" class="post-image">
+            <div class="post-actions">
+                <div class="actions-left">
+                    <span class="like-btn" onclick="toggleLike(this)">🤍</span>
+                    <span>💬</span>
+                    <span>📤</span>
+                </div>
+                <span class="save-btn" onclick="toggleSave(this)">🔖</span>
+            </div>
+            <div class="post-likes">3,456 likes</div>
+            <div class="post-caption">
+                <strong>fitness_freak</strong> Morning workout done! 💪 #fitness #motivation
+            </div>
+            <div class="post-comments">View all 78 comments</div>
+            <div class="post-time">8 HOURS AGO</div>
+            <div class="add-comment">
+                <input type="text" placeholder="Add a comment...">
+                <button>Post</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bottom Navigation -->
+    <nav class="bottom-nav">
+        <span class="active">🏠</span>
+        <span>🔍</span>
+        <span>▶️</span>
+        <span>🛍️</span>
+        <span>👤</span>
+    </nav>
+
+    <script src="script.js"></script>
+</body>
+</html>
